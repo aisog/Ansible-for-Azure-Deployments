@@ -16,7 +16,6 @@
             }
     },
     "variables": {
-        "location": "[resourceGroup().location]",
         "publisher": "MicrosoftWindowsServer",
         "offer": "WindowsServer",
         "sku": "2016-Nano-Server-Technical-Preview",
