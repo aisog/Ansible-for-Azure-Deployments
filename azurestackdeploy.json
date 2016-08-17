@@ -8,7 +8,25 @@
       "metadata": {
         "description": "User name for the Virtual Machine."
       }
-    }
+    },
+     "newStorageAccountName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name for new Storage Account Name."
+      }
+    },
+    "adminPassword": {
+      "type": "string",
+      "metadata": {
+        "description": "Password."
+      }
+    },
+      "vmName": {
+      "type": "string",
+      "metadata": {
+        "description": "vmName."
+      }
+    }  
   },
   "variables": {
     "vmSize": "Basic_A1",
