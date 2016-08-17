@@ -165,14 +165,18 @@
           "vmSize": "[variables('vmSize')]"
         },
         "osProfile": {
-                    "computerName": "[variables('vmName')]",
-                    "adminUsername": "[parameters('adminUsername')]",
-                    "adminPassword": "[parameters('adminPassword')]"
+          "computerName": "[variables('vmName')]",
+          "adminUsername": "[parameters('adminUsername')]",
+          "adminPassword": "[parameters('adminPassword')]",
+          "windowsConfiguration": {
+          "provisionVMAgent": true,
+          "enableAutomaticUpdates": true
+         }
         },
         "storageProfile": {
           "imageReference": {
             "publisher": "[variables('imagePublisher')]",
-            "offer": "[variables('imageOffer')]",
+            "offer": "[variables('offer')]",
             "sku": "[variables('sku')]",
             "version": "latest"
           },
