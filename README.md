@@ -1,0 +1,2 @@
+# azure
+Temporary only templtes
