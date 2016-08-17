@@ -16,7 +16,6 @@
             }
     },
     "variables": {
-        "dnsNameForPublicIP": "[concat('dns', resourceGroup().name)]",   
         "location": "[resourceGroup().location]",
         "publisher": "MicrosoftWindowsServer",
         "offer": "WindowsServer",
