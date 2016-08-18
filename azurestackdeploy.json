@@ -69,18 +69,30 @@
       "location": "[variables('location')]",
       "properties": {
         "securityRules": [
-          {
-            "name": "winrule_rule",
+           {
+            "name": "ps_over_http",
             "properties": {
-              "description": "UnLocks inbound to PS_Remote over https",
-              "protocol": "Tcp",
-              "sourcePortRange": "*",
-              "destinationPortRange": "5986",
-              "sourceAddressPrefix": "*",
-              "destinationAddressPrefix": "*",
-              "access": "Allow",
-              "priority": 123,
-              "direction": "Inbound"
+            "protocol": "*",
+            "sourcePortRange": "*",
+            "destinationPortRange": "5985",
+            "sourceAddressPrefix": "*",
+            "destinationAddressPrefix": "*",
+            "access": "Allow",
+            "priority": 1000,
+            "direction": "Inbound"
+          }
+        },
+        {
+            "name": "PS_over_https",
+            "properties": {
+            "protocol": "*",
+            "sourcePortRange": "*",
+            "destinationPortRange": "5986",
+            "sourceAddressPrefix": "*",
+            "destinationAddressPrefix": "*",
+            "access": "Allow",
+            "priority": 1010,
+            "direction": "Inbound"
             }
           }
         ]
