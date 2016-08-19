@@ -1,2 +1,2 @@
 # azure
-Temporary only templtes
+This template deploy nano server in Public Azure
