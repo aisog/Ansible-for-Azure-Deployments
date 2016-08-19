@@ -1,0 +1,17 @@
+---
+
+- name: Create Azure Deploy
+  azure_rm_deployment:
+    state: present
+    template_link: 'https://raw.githubusercontent.com/aisog/azure/master/azurestackdeploy.json'
+    resource_group_name: devops08b
+    parameters:
+      newStorageAccountName:
+        value: devstorage12
+      adminUsername:
+        value: nanoadmin
+      adminPassword:
+        value: EvaluationServer123  
+      vmName:
+        value: Nano_by_ansible
+

@@ -1,0 +1,13 @@
+[local]
+localhost
+
+[windows]
+137.116.253.176
+
+[windows:vars]
+ansible_ssh_user = ansible
+ansible_ssh_pass = EvaluationServer123
+ansible_ssh_port = 5986
+ansible_connection = winrm
+ansible_winrm_server_cert_validation=ignore
+

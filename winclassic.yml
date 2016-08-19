@@ -1,0 +1,7 @@
+---
+- hosts: local
+  connection: local
+  vars_files:
+    - roles/classic/vars/main.yml
+  roles:
+  - classic

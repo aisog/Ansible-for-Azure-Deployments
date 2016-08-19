@@ -1,0 +1,3 @@
+#azure deployment vars
+azure_sub_id: "169cbcfa-84f7-4736-982b-efb26d8c7b2d"
+azure_cert_path: "/home/ubuntu/.ssh/managementCert.pem"

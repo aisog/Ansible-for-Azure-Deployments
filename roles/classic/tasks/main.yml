@@ -1,0 +1,18 @@
+#Create windows machine
+- local_action:
+    module: azure
+    name: "Centos7DevOps1A"
+    subscription_id: "{{ azure_sub_id }}"
+    management_cert_path: "{{ azure_cert_path }}"
+    role_size: Basic_A1
+    image: 'Centos-7'
+    location: 'North Europe'
+    storage_account: '08ansiblestorage'
+    user: admin
+    password: "P@ssw0rd"
+    wait: yes
+  
+
+
+
+

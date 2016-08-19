@@ -1,0 +1,5 @@
+---
+- hosts: windows
+  connection: local
+  roles:
+  - winrm
