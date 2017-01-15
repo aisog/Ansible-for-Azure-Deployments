@@ -30,7 +30,7 @@
   },
   "variables": {
     "vmSize": "Basic_A1",
-    "sku": "Windows Server 2016 - Nano Server",
+    "sku": "2016-Nano-Server,
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'stdevops')]",
     "uniqueDnsLabelPrefix": "[concat('store', uniquestring(resourceGroup().id))]",
     "location": "[resourceGroup().location]",
