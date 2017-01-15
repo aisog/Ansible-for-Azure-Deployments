@@ -5,9 +5,10 @@ localhost
 x.x.x.x
 
 [windows:vars]
-ansible_ssh_user = ansible
-ansible_ssh_pass = {{"user_pass"}}
-ansible_ssh_port = 5986
-ansible_connection = winrm
+ansible_winrm_user = ansible
+ansible_winrm_password = {{user_pass}}
+ansible_winrm_port = 5986
+ansible_winrm_connection = winrm
 ansible_winrm_server_cert_validation=ignore
+
 
