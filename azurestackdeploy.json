@@ -33,7 +33,7 @@
     "sku": "2016-Nano-Server-Technical-Preview",
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'stdevops')]",
     "uniqueDnsLabelPrefix": "[concat('store', uniquestring(resourceGroup().id))]",
-    "location": "northeurope",
+    "location": "[resourceGroup().location]",
     "imagePublisher": "MicrosoftWindowsServer",
     "offer": "WindowsServer",
     "osDiskName": "osDisk1",
