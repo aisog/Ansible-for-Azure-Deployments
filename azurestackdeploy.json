@@ -48,6 +48,7 @@
     "virtualNetworkName": "VNET",
     "networkSecurityGroupName": "networkSecurityGroup1",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
+    "vmName":"[variables('vmName')]"
     "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
     "apiVersion": "2015-06-15"
   },
