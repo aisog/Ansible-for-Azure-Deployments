@@ -30,7 +30,6 @@
   },
   "variables": {
     "vmSize": "Basic_A1",
-    "vmName": "NanoVM",
     "sku": "2016-Nano-Server-Technical-Preview",
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'stdevops')]",
     "uniqueDnsLabelPrefix": "[concat('store', uniquestring(resourceGroup().id))]",
